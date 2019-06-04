@@ -1163,6 +1163,9 @@ h2{
 .btn.btn-md {
   padding: 8px 20px !important;
 }
+.btn.btn-md1 {
+  padding: 13px 20px !important;
+}
 .btn.btn-lg {
   padding: 18px 36px !important;
 }

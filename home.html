@@ -6,24 +6,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Biblioteca Universidad</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 
 	<!-- icon page-->
-	<link rel="icon" type="image/png" href="images/icons/Martz90-Circle-Books.ico"/>
+	<link rel="icon" type="image/png" href="images/icons/Martz90-Circle-Books.ico" />
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
-	
+
 	<!-- Fonts.css-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	
+
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
-	
+
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -36,6 +36,8 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="css/buscadormejorado.css">
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -46,191 +48,249 @@
 </head>
 
 <body>
-		
+
 	<div class="fh5co-loader"></div>
-	
+
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container-fluid">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-1">
+							<div id="fh5co-logo"><a href="http://www.unicauca.edu.co/versionP/"><img
+										src="images/logoUnicaucaWhite.png" alt="" height="60" width="48"></img></a>
+							</div>
+						</div>
+						<div class="col-xs-1 menu-1">
+							<h2>Biblioteca</br>Universidad del Cauca</h2>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="home.html">Inicio</a></li>
+								<li><a href="product.html">Catalogo</a></li>
+								<li class="has-dropdown">
+									<a href="blog.html">Tus Reservas</a>
+									<ul class="dropdown">
+										<li><a href="#">Opcion 1</a></li>
+										<li><a href="#">Opcion 2</a></li>
+										<li><a href="#">Opcion 3</a></li>
+										<li><a href="#">Opcion 4</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html">Acerca de</a></li>
+								<li class="btn-cta"><a href="index.html"><span>Cerrar Sesión</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+		<aside id="fh5co-hero" class="js-fullheight">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+					<li style="background-image: url(images/img_bg_1.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container-fluid">
+							<div class="row">
+								<div
+									class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text slider-text-bg">
+									<div class="slider-text-inner">
+										<h1>Encuentra tus libros favoritos, reserva, y disfruta de una busqueda fácil y
+											rápida.</h1>
+										<p class="ct gotobusqueda"><a href="#">comienza aquí<i
+													class="icon-arrow-down"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/img_bg_2.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container-fluid">
+							<div class="row">
+								<div
+									class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text slider-text-bg">
+									<div class="slider-text-inner">
+										<h1>Descubre nuestra gran cantidad de libros en cada una de nuestras
+											bibliotecas.</h1>
+										<h2>Ve mas acerca de nuestras bibliotecas aquí <a href="about.html"
+												target="_blank">Bibliotecas</a></h2>
+										<p class="ct"><a
+												href="https://www.unicauca.edu.co/versionP/servicios/bibliotecas">O en
+												la página oficial <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/img_bg_3.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container-fluids">
+							<div class="row">
+								<div
+									class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text slider-text-bg">
+									<div class="slider-text-inner">
+										<h1>También puedes disfrutar de nuestros servicios desde tu teléfono.</h1>
+										<p class="ct"><a href="product.html">Ver el catalogo<i
+													class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+
+		<div id="fh5co-mission">
+			<div class="container">
+				<br />
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<h3>Busqueda:</h3>
+						<div class="col-sm-10 col-lg-10 cajaParaBuscadores">
+							<ul id="lista-buscadores">
+							</ul>
+						</div>
+						<div class="col-sm-2 col-lg-2">
+							<button class="btn btn-md1 btn-primary" type="button" id="veABuscar">Buscar</button>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<!-- Lista de las opciones para buscar-->
+						<br />
+						<li class="ParaBuscador has-dropdown" style="list-style:none;">Escoge las categorias que deseas
+							buscar aquí
+							<ul class="dropdown">
+								<li><a class="queBuscar" id="agregar-por-titulo" href="javascript:void(0);">Titulo</a>
+								</li>
+								<li><a class="queBuscar" id="agregar-por-autor" href="javascript:void(0);">Autor</a>
+								</li>
+								<li><a class="queBuscar" id="agregar-por-editorial"
+										href="javascript:void(0);">Editorial</a></li>
+								<li><a class="queBuscar" id="agregar-por-isbn" href="javascript:void(0);">ISBN</a>
+								</li>
+							</ul>
+						</li>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<br />
+						<h3>Resultados:</h3>
+						<div id="informacionEncontrada"></div>
+					</div>
+				</div>
+			</div>
+			<!--esto no eh tocado-->
+			<!--<div id="informacionEncontrada"></div>-->
+		</div>
+
+		<div id="fh5co-content">
+			<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
+				<a href="https://www.youtube.com/embed/l8za4jAoExE" class="popup-youtube"><i
+						class="icon-video2"></i></a>
+				<div class="overlay"></div>
+			</div>
+			<div class="choose animate-box">
+				<div class="fh5co-heading">
+					<h2>¿Que encontraras en esta pagina web?</h2>
+				</div>
+				<ul class="list-nav">
+					<li><i class="icon-check2"></i>Tenemos un buscador dinámico, con diferentes criterios de búsqueda.
+					</li>
+					<li><i class="icon-check2"></i>Encuentra tus libros por categorías en nuestro catalogo.</li>
+					<li><i class="icon-check2"></i>Gran variedad de libros.</li>
+					<li><i class="icon-check2"></i>Reserva tus libros, y consulta las reservas que has realizado.</li>
+					<li><i class="icon-check2"></i>Un diseño responsivo para todo tipo de dispositivos.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="fh5co-mission">
+			<div class="container">
 				<div class="row">
-					<div class="col-xs-1">
-						<div id="fh5co-logo"><a href="http://www.unicauca.edu.co/versionP/"><img src="images/logoUnicaucaWhite.png" alt="" height="60" width="48"></img></a></div>
-					</div>
-					<div class="col-xs-1 menu-1">
-						<h2>Biblioteca</br>Universidad del Cauca</h2>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="home.html">Inicio</a></li>
-							<li><a href="product.html">Catalogo</a></li>
-							<li class="has-dropdown">
-								<a href="blog.html">Tus Reservas</a>
-								<ul class="dropdown">
-									<li><a href="#">Opcion 1</a></li>
-									<li><a href="#">Opcion 2</a></li>
-									<li><a href="#">Opcion 3</a></li>
-									<li><a href="#">Opcion 4</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html">Acerca de</a></li>
-							<li class="btn-cta"><a href="index.html"><span>Cerrar Sesión</span></a></li>
-						</ul>
+					<div class="col-md-6 col-md-offset-3 text-center animate-box">
+						<h3>Lema</h3>
+						<blockquote>
+							<p>"Posteris Lvmen Moritvrvs Edat"</p>
+						</blockquote>
 					</div>
 				</div>
-				
 			</div>
 		</div>
-	</nav>
 
-	<aside id="fh5co-hero" class="js-fullheight">
-		<div class="flexslider js-fullheight">
-			<ul class="slides">
-		   	<li style="background-image: url(images/img_bg_1.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		<div class="container-fluid">
-		   			<div class="row">
-			   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text slider-text-bg">
-							<div class="slider-text-inner">
-									<h1>Encuentra tus libros favoritos, reserva, y disfruta de una busqueda fácil y rápida.</h1>
-										<p class="ct gotobusqueda"><a href="#">comienza aquí<i class="icon-arrow-down"></i></a></p>
-							</div>
-			   			</div>
-			   		</div>
-		   		</div>
-		   	</li>
-		   	<li style="background-image: url(images/img_bg_2.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		<div class="container-fluid">
-		   			<div class="row">
-			   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text slider-text-bg">
-							<div class="slider-text-inner">
-									<h1>Descubre nuestra gran cantidad de libros en cada una de nuestras bibliotecas.</h1>
-										<h2>Ve mas acerca de nuestras bibliotecas aquí <a href="about.html" target="_blank">Bibliotecas</a></h2>
-										<p class="ct"><a href="https://www.unicauca.edu.co/versionP/servicios/bibliotecas">O en la página oficial <i class="icon-arrow-right"></i></a></p>
-							</div>
-			   			</div>
-			   		</div>
-		   		</div>
-		   	</li>
-		   	<li style="background-image: url(images/img_bg_3.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		<div class="container-fluids">
-		   			<div class="row">
-			   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text slider-text-bg">
-			   				<div class="slider-text-inner">
-								   <h1>También puedes disfrutar de nuestros servicios desde tu teléfono.</h1>
-								   <p class="ct"><a href="product.html">Ver el catalogo<i class="icon-arrow-right"></i></a></p>
-			   				</div>
-			   			</div>
-			   		</div>
-		   		</div>
-		   	</li>		   	
-		  	</ul>
-	  	</div>
-	</aside>
-
-
-	<div id="fh5co-content">
-<!-------    CONTENIDO PARA EL BUSCADOR ----->
-	</div>
-
-	<div id="fh5co-content">
-		<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
-			<a href="https://www.youtube.com/embed/l8za4jAoExE" class="popup-youtube"><i class="icon-video2"></i></a>
+		<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
 			<div class="overlay"></div>
-		</div>		
-		<div class="choose animate-box">
-			<div class="fh5co-heading">
-				<h2>¿Que encontraras en esta pagina web?</h2>
-			</div>
-			<ul class="list-nav">
-				<li><i class="icon-check2"></i>Tenemos un buscador dinámico, con diferentes criterios de búsqueda.</li>
-				<li><i class="icon-check2"></i>Encuentra tus libros por categorías en nuestro catalogo.</li>
-				<li><i class="icon-check2"></i>Gran variedad de libros.</li>
-				<li><i class="icon-check2"></i>Reserva tus libros, y consulta las reservas que has realizado.</li>
-				<li><i class="icon-check2"></i>Un diseño responsivo para todo tipo de dispositivos.</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="fh5co-mission">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center animate-box">
-					<h3>Lema</h3>
-					<blockquote>
-						<p>"Posteris Lvmen Moritvrvs Edat"</p>
-					</blockquote>
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>¿Quieres saber más sobre nosotros?</h2>
+						<p>Búscanos en nuestras dependencias o envíanos un correo dando clic abajo.</p>
+						<p><a href="#" class="btn btn-default btn-lg">Contactanos</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>¿Quieres saber más sobre nosotros?</h2>
-					<p>Búscanos en nuestras dependencias o envíanos un correo dando clic abajo.</p>
-					<p><a href="#" class="btn btn-default btn-lg">Contactanos</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
-					<h4>Biblioteca Universidad del Cauca</h4>
-					<p>La Biblioteca de la Universidad del Cauca ofrece servicios de información de calidad, eficientes y actualizados conformes a los avances tecnológicos que logren satisfacer las necesidades de los diferentes usuarios, permitiendo el acceso universal a la información, a través de diversos medios, preservando además las colecciones bibliográficas en términos de seguridad y funcionalidad.</p>
-				</div>
-				<div class="col-md-4 col-md-push-1">
-					<h4>Enlaces de interés</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="http://www.unicauca.edu.co/versionP/">Universidad del Cauca</a></li>
-						<li><a href="http://www.unicauca.edu.co/versionP/pregrado">Programas de pregrado</a></li>
-						<li><a href="http://ublogs.unicauca.edu.co/ssi/page/8/">Blog</a></li>
-						<li><a href="https://simca.unicauca.edu.co/simca/">Simca</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-4 col-md-push-1">
-					<h4>Información y Contacto</h4>
-					<ul class="fh5co-footer-links">
-						<li>Sector Tulcán (Popayán - Cauca), <br> Carrera 2A No. 3N 111</li>
-						<li>Tel. (572) 8209900 - Linea 018000 949020</li>
-						<li>digital@unicauca.edu.co</li>
-					</ul>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="https://twitter.com/unicauca"><i class="icon-twitter"></i></a></li>
-							<li><a href="https://www.facebook.com/universidadelcauca/"><i class="icon-facebook"></i></a></li>
-							<li><a href="https://www.linkedin.com/school/universidad-del-cauca"><i class="icon-linkedin"></i></a></li>
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-4 fh5co-widget">
+						<h4>Biblioteca Universidad del Cauca</h4>
+						<p>La Biblioteca de la Universidad del Cauca ofrece servicios de información de calidad,
+							eficientes y actualizados conformes a los avances tecnológicos que logren satisfacer las
+							necesidades de los diferentes usuarios, permitiendo el acceso universal a la información, a
+							través de diversos medios, preservando además las colecciones bibliográficas en términos de
+							seguridad y funcionalidad.</p>
+					</div>
+					<div class="col-md-4 col-md-push-1">
+						<h4>Enlaces de interés</h4>
+						<ul class="fh5co-footer-links">
+							<li><a href="http://www.unicauca.edu.co/versionP/">Universidad del Cauca</a></li>
+							<li><a href="http://www.unicauca.edu.co/versionP/pregrado">Programas de pregrado</a></li>
+							<li><a href="http://ublogs.unicauca.edu.co/ssi/page/8/">Blog</a></li>
+							<li><a href="https://simca.unicauca.edu.co/simca/">Simca</a></li>
 						</ul>
-					</p>
+					</div>
+
+					<div class="col-md-4 col-md-push-1">
+						<h4>Información y Contacto</h4>
+						<ul class="fh5co-footer-links">
+							<li>Sector Tulcán (Popayán - Cauca), <br> Carrera 2A No. 3N 111</li>
+							<li>Tel. (572) 8209900 - Linea 018000 949020</li>
+							<li>digital@unicauca.edu.co</li>
+						</ul>
+						<p>
+							<ul class="fh5co-social-icons">
+								<li><a href="https://twitter.com/unicauca"><i class="icon-twitter"></i></a></li>
+								<li><a href="https://www.facebook.com/universidadelcauca/"><i
+											class="icon-facebook"></i></a></li>
+								<li><a href="https://www.linkedin.com/school/universidad-del-cauca"><i
+											class="icon-linkedin"></i></a></li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block">&copy; </small>
+							<small class="block">Realizado por: Juan Jose Paredes, Federico Fransisco</small>
+						</p>
+					</div>
 				</div>
 
 			</div>
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; </small> 
-						<small class="block">Realizado por: Juan Jose Paredes, Federico Fransisco</small>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
+		</footer>
 	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -249,5 +309,9 @@
 	<!-- Nuestro implementacion de js -->
 	<script src="js/myJava.js"></script>
 
-	</body>
+	<script src="js/buscadormejorado.js"></script>
+	<script src="js/crcBook.js"></script>
+
+</body>
+
 </html>

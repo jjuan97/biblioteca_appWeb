@@ -1,0 +1,123 @@
+.posOPbusqueda li ul{
+    display: none;
+}
+
+.posOPbusqueda li:hover> ul{
+    display: block;
+}
+
+.ParaBuscador{
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1;
+    border: rgb(218, 208, 208) solid;
+    padding: 0.7em;
+    margin-bottom: 0em;
+    border-radius: 1.6em; 
+    height: 1%; 
+
+    
+}
+
+.btnBuscar{
+    position: absolute;
+    padding: 1em;
+    display: inline;
+    top: 18em;
+    left: 20%;
+    padding: 0.5em;
+    border: 0;
+    border-radius: 1.6em;
+    }
+
+    .btnBuscar:hover{
+      background: rgb(163, 163, 163);
+    }
+
+#informacionEncontrada{
+    position: relative;
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 1em 0;
+    padding-left: 1em;
+}
+
+.ParaBuscador li{
+    background:white;
+
+}
+.ParaBuscador li:hover{
+background: rgb(126, 118, 118);
+color: aliceblue;
+border-radius: 1.6em;
+}
+
+.ParaBuscador a{
+    position: relative;
+    left: 20px;
+}
+.X{
+    width: 2em;
+    border-radius: 5em;
+    border: 2px solid #317AE1;
+    background: #317AE1;
+    color: #fff;
+}
+
+.posOPbusqueda{
+    display: inline-block;
+    width: 29em;
+    padding: 5em;
+}
+
+#BuscadorSecundario{
+    /*position: absolute;*/
+    top: 13em;
+    left: 48%;
+}
+
+.cajasBuscadoras{
+    width: 43em;
+}
+
+.cajaB2{
+    top: 1em;
+    position: relative;
+    display: inline-block;
+    left: 24em;
+}
+
+.cajaB2 li{
+ 
+    border: rgb(218, 208, 208) solid;
+    padding: 0.7em;
+    margin-bottom: 0em;
+    border-radius: 1.6em; 
+}
+.parametrosBuscadores{
+
+    height: 20em;
+}
+
+.cajaParaBuscadores{
+  position: relative;
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 300;
+  padding: 1em 0;
+}
+.cajaParaBuscadores:active, .cajaParaBuscadores:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #317AE1;
+  }
