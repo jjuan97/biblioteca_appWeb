@@ -1,0 +1,4 @@
+---
+applications:
+  name: bibliotecadelivery
+  memory: 64M
